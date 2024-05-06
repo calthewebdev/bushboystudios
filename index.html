@@ -28,6 +28,41 @@
         }
         
     }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bouncing-text {
+  display: inline-block;
+  animation: bounce 2s infinite;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #265687;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-align: center;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, .3);
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.rotating-text {
+  display: inline-block;
+  animation: rotate 5s linear infinite;
+  position: inherit;
+}
+
 </style>
 </head>
 <body class="black">
@@ -66,39 +101,38 @@
         </div>
         <nav class="nav-wrapper transparent">
             <div class="container">
-                <h4>Wanna see more like this?</h4>
-                <ul class="left">
+                <h4 class="center black-text bouncing-text">Wanna see more?</h4>
+                <ul>
                     <li>
-                        <a href="#" class="white-text waves-effect">
-                            YES
+                        <a href="#" class="white-text waves-effect rotating-text">
+                            <h5 class="">click-me</h5> 
                         </a>
                     </li>
                 </ul>
+    
             </div>
         </nav>
     </div>
 
     <section class="container section" id="photos">
         <div class="row">
-            <div class="col s12 m8 l4">
+            <div class="col s12 m8 l4 ">
                 <img src="pics/look5.jpg" alt="" class="responsive-img">
             </div>
             <div class="col s12 m8 l8 white-text">
                 <h5>the heart of an ancient forest, where the whispers of the past still linger in the air, a solitary figure stood, gazing up at the towering trees, their leaves rustling like the fluttering pages of a well-thumbed book, each one a testament to the countless stories that had unfolded beneath their watchful boughs, stories of love and loss, of battles won and lost, of secrets buried deep within the earth.</h5>
             </div>
         </div>
-    </section>
-    <section class="container section" id="photos">
+
         <div class="row">
-            <div class="col s12 m8 l4">
+            <div class="col s12 m8 l4 push-l8">
                 <img src="pics/look5.jpg" alt="" class="responsive-img">
             </div>
-            <div class="col s12 m8 l8 white-text">
+            <div class="col s12 m8 l8 white-text pull-l4">
                 <h5>the heart of an ancient forest, where the whispers of the past still linger in the air, a solitary figure stood, gazing up at the towering trees, their leaves rustling like the fluttering pages of a well-thumbed book, each one a testament to the countless stories that had unfolded beneath their watchful boughs, stories of love and loss, of battles won and lost, of secrets buried deep within the earth.</h5>
             </div>
         </div>
-    </section>
-    <section class="container section" id="photos">
+
         <div class="row">
             <div class="col s12 m8 l4">
                 <img src="pics/look5.jpg" alt="" class="responsive-img">
@@ -113,8 +147,8 @@
         <div class="parallax">
             <img src="pics/pa.jpg" alt="camera" class="responsive-img">
             <ul>
-                <li><a href="#" class="black-text waves-effect">
-                    <h1 class="responsive-text">More</h1>
+                <li><a href="#" class="black-text waves-effect bouncing-text">
+                    <h1 class="responsive-text">What's next?</h1>
                 </a></li>
             </ul>
         </div>
