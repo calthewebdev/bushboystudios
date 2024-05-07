@@ -57,12 +57,10 @@
   to { transform: rotate(360deg); }
 }
 
-.rotating-text {
-  display: inline-block;
-  animation: rotate 5s linear infinite;
-  position: inherit;
+.section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 }
-
 </style>
 </head>
 <body class="black">
@@ -80,15 +78,13 @@
             </a>
             
             <ul class="right hide-on-med-and-down">
-                <li><a href="#" class="black-text waves-effect">Images</a></li>
-                <li><a href="#" class="black-text waves-effect">About</a></li>
-                <li><a href="#" class="black-text waves-effect">Contact</a></li>
+                <li><a href="#about" class="black-text waves-effect">About</a></li>
+                <li><a href="#contact" class="black-text waves-effect">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <ul class="sidenav" id="mobile-links">
-        <li><a href="#" class="black-text waves-effect">Images</a></li>
         <li><a href="#" class="black-text waves-effect">About</a></li>
         <li><a href="#" class="black-text waves-effect">Contact</a></li>
     </ul>
@@ -104,7 +100,7 @@
                 <h4 class="center black-text bouncing-text">Wanna see more?</h4>
                 <ul>
                     <li>
-                        <a href="#" class="white-text waves-effect rotating-text">
+                        <a href="#" class="white-text waves-effect">
                             <h5 class="">click-me</h5> 
                         </a>
                     </li>
@@ -114,10 +110,10 @@
         </nav>
     </div>
 
-    <section class="container section" id="photos">
+    <section class="container section scrollspy"  id="about">
         <div class="row">
             <div class="col s12 m8 l4 ">
-                <img src="pics/look5.jpg" alt="" class="responsive-img">
+                <img src="pics/look5.jpg" alt="" class="responsive-img materialboxed">
             </div>
             <div class="col s12 m8 l8 white-text">
                 <h5>the heart of an ancient forest, where the whispers of the past still linger in the air, a solitary figure stood, gazing up at the towering trees, their leaves rustling like the fluttering pages of a well-thumbed book, each one a testament to the countless stories that had unfolded beneath their watchful boughs, stories of love and loss, of battles won and lost, of secrets buried deep within the earth.</h5>
@@ -126,7 +122,7 @@
 
         <div class="row">
             <div class="col s12 m8 l4 push-l8">
-                <img src="pics/look5.jpg" alt="" class="responsive-img">
+                <img src="pics/look5.jpg" alt="" class="responsive-img materialboxed">
             </div>
             <div class="col s12 m8 l8 white-text pull-l4">
                 <h5>the heart of an ancient forest, where the whispers of the past still linger in the air, a solitary figure stood, gazing up at the towering trees, their leaves rustling like the fluttering pages of a well-thumbed book, each one a testament to the countless stories that had unfolded beneath their watchful boughs, stories of love and loss, of battles won and lost, of secrets buried deep within the earth.</h5>
@@ -135,7 +131,7 @@
 
         <div class="row">
             <div class="col s12 m8 l4">
-                <img src="pics/look5.jpg" alt="" class="responsive-img">
+                <img src="pics/look5.jpg" alt="" class="responsive-img materialboxed">
             </div>
             <div class="col s12 m8 l8 white-text">
                 <h5>the heart of an ancient forest, where the whispers of the past still linger in the air, a solitary figure stood, gazing up at the towering trees, their leaves rustling like the fluttering pages of a well-thumbed book, each one a testament to the countless stories that had unfolded beneath their watchful boughs, stories of love and loss, of battles won and lost, of secrets buried deep within the earth.</h5>
@@ -154,7 +150,77 @@
         </div>
     </div>
     
-
+    <section class="section-container scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get in touch!</h2>
+                <p class="blue-text">the heart of an ancient forest, where the whispers of the past still linger in the air, a solitary figure stood, gazing up at the towering trees, their leaves rustling like the fluttering pages of a well-thumbed book, each one a testament to the countless stories that had unfolded beneath their watchful boughs, stories of love and loss, of battles won and lost, of secrets buried deep within the earth.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Any comments?</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date you need me for!</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services required</p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Photography</span>
+                            </label>
+                    <div class="input-field">
+                        <p>Services required</p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Cinamatography</span>
+                            </label>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn">Sumbit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="page-footer transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5 class="blue-text">Let's connect</h5>
+                    <nav class="transparent">
+                        <ul>
+                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram" >
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright transparent">
+            <div class="container center-align">&copy; 2024 bushboystudios</div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -163,7 +229,13 @@
         $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.parallax').parallax();
-        })
+            $('.materialboxed').materialbox();
+            $('.datepicker').datepicker({
+
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
     </script>
 </body>
 </html>
