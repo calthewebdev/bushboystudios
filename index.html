@@ -68,7 +68,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     flex-direction: column;
 }
 .word{
@@ -78,23 +78,21 @@
     letter-spacing: 5px;
     text-transform: uppercase;
     position: absolute;
-    animation: morph 15s infinite ease-in-out;
+    animation: morph 11s infinite ease-in-out;
 }
 .word:nth-child(1){
-    animation-delay: -14s;
+    animation-delay: -10s;
 }
 .word:nth-child(2){
-    animation-delay: -11s;
+    animation-delay: -7s;
 }
 .word:nth-child(3){
-    animation-delay: -8s;
+    animation-delay: -4s;
 }
 .word:nth-child(4){
-    animation-delay: -5s;
+    animation-delay: -1s;
 }
-.word:nth-child(5){
-    animation-delay: -2s;
-}
+
 @keyframes morph{
     0%,5%,100%{
         filter: blur(0px);
@@ -105,7 +103,9 @@
         opacity: 0;
     }
 }
-
+.palink{
+    padding-top: 300px;
+}
 </style>
 </head>
 <body class="black">
@@ -152,10 +152,10 @@
     <section class="container section scrollspy"  id="about">
         <div class="row">
             <div class="col s12 m8 l4 ">
-                <img src="pics/look5.jpg" alt="" class="responsive-img materialboxed">
+                <img src="pics/1st.jpg" alt="" class="responsive-img materialboxed">
             </div>
             <div class="col s12 m8 l8 white-text">
-                <h5>the heart of an ancient forest, where the whispers of the past still linger in the air, a solitary figure stood, gazing up at the towering trees, their leaves rustling like the fluttering pages of a well-thumbed book, each one a testament to the countless stories that had unfolded beneath their watchful boughs, stories of love and loss, of battles won and lost, of secrets buried deep within the earth.</h5>
+                <h5>I capture the world in motion and still. With a keen eye for composition, I wield both camera and drone to craft stunning photographs and captivating videos. From sweeping aerial landscapes to intimate portraits, I bring your vision to life, one frame at a time.</h5>
             </div>
         </div>
 
@@ -179,17 +179,23 @@
     </section>
 
     <div class="parallax-container">
+        <ul class="palink">
+            <li>
+                <a href="#" class="brown-text text-darken-2 waves-effect right">
+                    <h5 class="">click-me</h5> 
+                </a>
+            </li>
+        </ul>
         <div class="parallax">
             <img src="pics/pa.jpg" alt="camera" class="responsive-img">
+            
             <div class="words">
                 <div class="word">I've</div>
                 <div class="word">got</div>
                 <div class="word">more</div>
-                <div class="word">👇🏿</div>
-                <div class="word"><a href="#" class="white-text waves-effect">
-                    <h5 class="">click-me</h5> 
-                </a></div>
+                <div class="word">👉🏾</div>
             </div>
+            
             </div>
     </div>
     
