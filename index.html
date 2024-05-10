@@ -61,47 +61,49 @@
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
-.hero-banner {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  position: relative;
-  justify-content: center;
-  z-index: -1;
-}
 
-.hero-banner__title {
-  color: #fff;
-  font-size: 100px;
-  font-weight: 700;
-  padding: 0 20px;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
+.words{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.hero-banner__stroked-title {
-  color: transparent;
-  -webkit-text-stroke: 2px white;
-  text-stroke: 2px white;
+.word{
+    max-width: 100%;
+    font-size: 8rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    animation: morph 15s infinite ease-in-out;
 }
-
-.hero-banner__image {
-  border-radius: 20px;
-  position: fixed;
-  transform: rotate(-15deg);
-  width: 450px;
+.word:nth-child(1){
+    animation-delay: -14s;
 }
-
-.content {
-  background-color: #eaeaea;
-  font-size: 40px;
-  padding: 120px 80px;
-  height: 100vh; // Fake content height.
+.word:nth-child(2){
+    animation-delay: -11s;
 }
-
-* {
-  box-sizing: border-box;
+.word:nth-child(3){
+    animation-delay: -8s;
+}
+.word:nth-child(4){
+    animation-delay: -5s;
+}
+.word:nth-child(5){
+    animation-delay: -2s;
+}
+@keyframes morph{
+    0%,5%,100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    20%,80%{
+        filter: blur(35px);
+        opacity: 0;
+    }
 }
 
 </style>
@@ -179,22 +181,16 @@
     <div class="parallax-container">
         <div class="parallax">
             <img src="pics/pa.jpg" alt="camera" class="responsive-img">
-            <ul>
-                <li><a href="#" class="black-text waves-effect bouncing-text">
-                    <h1 class="responsive-text">What's next?</h1>
-                </a></li>
-            </ul>
-            <div class="hero-banner">
-                <div class="hero-banner__title" aria-hidden="true">Wonderful title</div>
-                <img class="hero-banner__image" src="https://assets.freedommayer.com/codepen/mountains-dark.jpg" alt=""/>
-                <h1 class="hero-banner__title hero-banner__stroked-title">Wonderful title</h1>
-              </div>
-              
-              <div class="content">
-                Wonderful content.
-              </div>
-              
-        </div>
+            <div class="words">
+                <div class="word">I've</div>
+                <div class="word">got</div>
+                <div class="word">more</div>
+                <div class="word">👇🏿</div>
+                <div class="word"><a href="#" class="white-text waves-effect">
+                    <h5 class="">click-me</h5> 
+                </a></div>
+            </div>
+            </div>
     </div>
     
     <section class="section-container scrollspy" id="contact">
