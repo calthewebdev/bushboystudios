@@ -61,6 +61,49 @@
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
+.hero-banner {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+}
+
+.hero-banner__title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-banner__stroked-title {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white;
+}
+
+.hero-banner__image {
+  border-radius: 20px;
+  position: fixed;
+  transform: rotate(-15deg);
+  width: 450px;
+}
+
+.content {
+  background-color: #eaeaea;
+  font-size: 40px;
+  padding: 120px 80px;
+  height: 100vh; // Fake content height.
+}
+
+* {
+  box-sizing: border-box;
+}
+
 </style>
 </head>
 <body class="black">
@@ -141,6 +184,16 @@
                     <h1 class="responsive-text">What's next?</h1>
                 </a></li>
             </ul>
+            <div class="hero-banner">
+                <div class="hero-banner__title" aria-hidden="true">Wonderful title</div>
+                <img class="hero-banner__image" src="https://assets.freedommayer.com/codepen/mountains-dark.jpg" alt=""/>
+                <h1 class="hero-banner__title hero-banner__stroked-title">Wonderful title</h1>
+              </div>
+              
+              <div class="content">
+                Wonderful content.
+              </div>
+              
         </div>
     </div>
     
